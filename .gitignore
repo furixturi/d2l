@@ -1,2 +1,3 @@
 *.zip
 *.cer
+.DS_Store
