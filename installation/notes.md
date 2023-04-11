@@ -83,3 +83,21 @@ $ ssh -i <ssh key> -L8888:localhost:8888 ubuntu@54.249.149.5
 http://localhost:8888/?token=e6fbc787804e7b5d9ecd882211d23e7d8c94eb3136e21bc8
 ```
 
+## Alternative: Run and connect to a local Jupyter server
+1. Install Jupyter
+```bash
+$ pip3 install jupyter
+```
+2. Start the server
+```bash
+$ jupyter notebook
+```
+The server connection URI will be shown in the terminal in the format like the following
+```
+http://localhost:8889/?token=3537328d33241057ed984417716c9c19a1d0a12caf516536
+```
+3. Connect the server in VSCode
+   1. Select kernel
+   2. `shift+cmd+p` to open VS code's command pallete
+   3. select "Jupyter: Specify Jupyter Server for Connections"
+   4. copy and paste the server connection URI, hit Enter
